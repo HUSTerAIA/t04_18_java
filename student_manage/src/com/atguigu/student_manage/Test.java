@@ -5,7 +5,7 @@ public class Test {
         /*
         调用StudentView的初始化程序
          */
-        StudentView studentView = new StudentView();
-        studentView.start();
+
+        new StudentView().start();  //访问非静态成员
     }
 }
