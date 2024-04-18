@@ -8,7 +8,7 @@ public class StudentView {
     Scanner sc = new Scanner(System.in);    //键盘录入
     int count = 0;    //学生数目索引
     Student[] students = new Student[50];   //对象数组，一个班级总数，访问非静态成员
-
+//    Student[] newStudents = new Student[students.length-1];     //一次删除一个学生，复制到新数组
 
     /*
     start方法用于展示页面及调用功能
@@ -38,8 +38,15 @@ public class StudentView {
                     findStudent();
                     break;
                 case 5:
-                    System.out.println("退出系统");
-                    break;
+                    System.out.println("是否退出系统？0（退出）/9（取消）");
+                    int key = sc.nextInt();
+                    if (key == 0) {
+                        System.out.println("成功退出");
+                        return; //结束方法
+                    } else {
+                        break;  //
+                    }
+
             }
 
 
@@ -47,7 +54,7 @@ public class StudentView {
     }
 
     private void findStudent() {
-        System.out.println("学生" + "\t" + "姓名" + "\t" + "年龄" + "\t" + "性别");
+        System.out.println("学号" + "\t" + "姓名" + "\t" + "年龄" + "\t" + "性别");
         /*
         1.冒泡排序
         2.显示所有学生
@@ -61,9 +68,11 @@ public class StudentView {
                 }
             }
         }
+
         if (count == 0) {
             System.out.println("当前班级无学生，请添加");
         } else {
+
             for (int k = 0; k < count; k++) {
                 System.out.println(students[k].getId() + "\t" + students[k].getName() + "\t" + students[k].getAge() + "\t" + students[k].getGender());
             }
@@ -82,7 +91,7 @@ public class StudentView {
          */
         System.out.println("学生学号：");
         int id = sc.nextInt();
-        int index=ArrayUtils.findIndex(students,count,id);
+        int index = ArrayUtils.findIndex(students, count, id);
         System.out.println("学生姓名：");
         String name = sc.next();
         System.out.println("学生年龄：");
@@ -95,7 +104,22 @@ public class StudentView {
     }
 
     private void deleteStudent() {
-        System.out.println("删");
+        /*
+        1.录入学号；
+        2.查找索引；
+        3.复制索引前后到temp；
+        4.students更新；
+         */
+        System.out.println("学号：");
+        int id = sc.nextInt();
+        int index = ArrayUtils.findIndex(students, count, id);
+        Student[] tempStudents = new Student[students.length - 1];
+        System.arraycopy(students, 0, tempStudents, 0, index);  //index前
+        System.arraycopy(students, index + 1, tempStudents, index, students.length - index - 1);
+        students = tempStudents;
+        count--;
+        System.out.println("删除成功");
+
     }
 
     private void addStudent() {
