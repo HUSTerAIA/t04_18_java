@@ -10,7 +10,7 @@ public class Thread2 extends Thread{
         }
 
         for(int i=1;i<10;i++){
-            System.out.println(getName()+"执行了"+i);
+            System.out.println(getName()+"执行了..."+i);
         }
     }
 
