@@ -1,4 +1,4 @@
-package com.atguigu.dielock;
+package com.atguigu.deadlock;
 
 public class Test {
     public static void main(String[] args) {

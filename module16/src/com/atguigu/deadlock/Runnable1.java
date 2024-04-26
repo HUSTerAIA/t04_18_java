@@ -1,4 +1,4 @@
-package com.atguigu.dielock;
+package com.atguigu.deadlock;
 
 public class Runnable1 implements Runnable {
     private boolean flag;
