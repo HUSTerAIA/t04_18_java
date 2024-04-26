@@ -1,4 +1,4 @@
-package com.atguigu.api1;
+package com.atguigu.math1;
 
 public class Math1 {
     public static void main(String[] args) {

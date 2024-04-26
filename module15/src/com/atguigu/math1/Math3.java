@@ -1,4 +1,4 @@
-package com.atguigu.api1;
+package com.atguigu.math1;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
