@@ -26,7 +26,7 @@ public class FileCopy1 {
             fos.write(bytes, 0, len);
         }
 
-        fos.close();        //习惯先关读取
+        fos.close();        //习惯先关写数据
         fis.close();
 
 
