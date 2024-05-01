@@ -42,6 +42,14 @@ public class Person0 {
                 '}';
     }
 
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
     private void eat(){
         System.out.println("吃饭");
     }
