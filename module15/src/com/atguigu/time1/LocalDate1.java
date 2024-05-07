@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class LocalDate1 {
     public static void main(String[] args) {
         //创建对象
-        LocalDate ld=LocalDate.now();
+        LocalDate ld=LocalDate.now();   //构造私有化，不能new对象，访问静态成员
         System.out.println("ld = " + ld);
         //设置时间
         LocalDate ld1=LocalDate.of(2024,4,1);
