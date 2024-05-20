@@ -6,8 +6,5 @@ public class Demo4Arithmetic {
         c=c++;
         System.out.println(c);
 
-
-
-
     }
 }
