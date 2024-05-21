@@ -10,12 +10,12 @@ public class Demo4Loop {
         对折
         }
          */
-        double paper=0.1;
-        int count=0;
-        double mountain=8844430.24;
-        while(paper<mountain){
-            paper*=2;
-            count++;
+        double paper=0.1;       //纸张厚度
+        int count=0;            //折纸次数
+        double mountain=8844430.24;         //山峰高度
+        while(paper<mountain){      //纸张高度《山峰
+            paper*=2;       //对折
+            count++;       //次数+1
         }
         System.out.println("count = " + count);
     }

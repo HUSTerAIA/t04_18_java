@@ -8,7 +8,7 @@ public class Demo3Scanner {
         Scanner sc=new Scanner(System.in);
 //        String data1=sc.next();
         //调用
-        String data2=sc.nextLine();
+        String data2=sc.nextLine();     //遇到回车结束录入
 //        System.out.println(data1);
 
 

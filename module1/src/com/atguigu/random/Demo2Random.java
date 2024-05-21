@@ -9,7 +9,7 @@ public class Demo2Random {
         System.out.println("a="+a);
 
         //234-1243
-        int b=rand.nextInt(1243+1-234)+234;
+        int b=rand.nextInt(1243+1-234)+234;     //[234,1234]
         System.out.println("b="+b);
 
     }

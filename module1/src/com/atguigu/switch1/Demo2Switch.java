@@ -10,7 +10,7 @@ public class Demo2Switch {
         switch(data){
             case 1:
                 System.out.println("测试1");
-
+                //贯穿
             case 2:
                 System.out.println("测试2");
 
