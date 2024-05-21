@@ -18,13 +18,17 @@ public class Demo8Array {
       3.旧数组地址值指向新数组
        */
         int[] oldArray = {1,2,5,3,7};
-        int[] newArray=new int[10];
+        System.out.println("oldArray = " + oldArray);
+        int[] newArray=new int[10];     // 定义新数组
         System.out.println("oldArray:"+ Arrays.toString(oldArray));
         for (int i=0;i<oldArray.length;i++){
-            newArray[i]=oldArray[i];
+            newArray[i]=oldArray[i];        //旧数组元素复制
         }
-        oldArray=newArray;
+        oldArray=newArray;      //旧数组指向新数组地址
         System.out.println("newArray:"+ Arrays.toString(oldArray));
+
+        System.out.println(oldArray);       //旧数组地址值改变
+        System.out.println(newArray);
 
     }
 }

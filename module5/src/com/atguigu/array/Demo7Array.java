@@ -2,12 +2,14 @@
 package com.atguigu.array;
 
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Demo7Array {
     public static void main(String[] args) {
       /*
+      查找元素出现位置：
       1.创建Scanner对象
       2.数组存数据
       3.遍历，判断是否相等
@@ -17,9 +19,10 @@ public class Demo7Array {
         int[] arr=new int[10];
 //        int temp=0;
         for (int i=0;i<arr.length;i++){
-            arr[i]=rand.nextInt(10);
+            arr[i]=rand.nextInt(10);        //初始化长度为10的数组元素
         }
         System.out.println(" 数组元素如下： ");
+        System.out.println(Arrays.toString(arr));
         for(int k=0;k<arr.length;k++){
             System.out.print( arr[k]+",");
         }

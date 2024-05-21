@@ -8,7 +8,7 @@ public class Demo5Array {
         int[] arr={1,4,76,3,8,39};
         int max=arr[0];
         for(int i=0;i<arr.length;i++){
-            if(max<arr[i]){
+            if(max<arr[i]){     // 查找最大值
                 max=arr[i];
             }
         }

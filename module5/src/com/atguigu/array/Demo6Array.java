@@ -13,13 +13,13 @@ public class Demo6Array {
             arr[i]=rand.nextInt(100)+1;
         }
         for(int j=0;j<10;j++){
-            if(arr[j]%3==0 && arr[j]%5==0 && arr[j]%7!=0)
+            if(arr[j]%3==0 && arr[j]%5==0 && arr[j]%7!=0)       //查找能够被35整除并且不能被7整除的数字
             {
                 count++;
                 System.out.println("arr[j] = " + arr[j]);
             }
 
         }
-        System.out.println("count = " + count);
+        System.out.println("count = " + count);     //一共多少个
     }
 }

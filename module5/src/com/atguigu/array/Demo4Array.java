@@ -13,5 +13,8 @@ public class Demo4Array {
         for(int i=0;i<array1.length;i++){
             System.out.println(array1[i]);
         }
+        int[] array2=new int[3];
+        System.out.println(array2);     //地址值
+        System.out.println(array2[0]);  // int默认值
     }
 }

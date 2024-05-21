@@ -23,7 +23,7 @@ public class Demo9Array {
             newArray[i]=oldArray1[i];
         }
         for(int j=0;j<oldArray2.length;j++){
-            newArray[j+oldArray1.length]=oldArray2[j];
+            newArray[j+oldArray1.length]=oldArray2[j];      //第二次赋值首位在第一次赋值末尾
         }
         System.out.println("newArray:"+ Arrays.toString(newArray));
 
