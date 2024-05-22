@@ -8,5 +8,5 @@ public class Person {
     操作前初始化赋值
      */
     Animal animal=new Animal();     //默认null
-    Animal  animal1;    //默认null
+    Animal  animal1;    //默认null，层级嵌套，类中类
 }

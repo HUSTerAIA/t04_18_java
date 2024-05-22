@@ -8,7 +8,7 @@ public class Demo1Object {
         面向过程：
          */
         int[] arr = {1, 2, 3, 4};
-        System.out.println("[");
+        System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
                 System.out.println(arr[i] + "]");
