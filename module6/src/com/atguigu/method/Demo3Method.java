@@ -9,7 +9,7 @@ public class Demo3Method {
         System.out.println("result = " + result);
     }
 
-    public static boolean compare(int a, int b) {
+    public static boolean compare(int a, int b) {       // 形参
         //无法调用i,j
         if (a > b) {
             return true;

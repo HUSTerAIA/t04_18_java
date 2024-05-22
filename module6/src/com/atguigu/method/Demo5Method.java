@@ -10,9 +10,10 @@ public class Demo5Method {
         }
 
     }
-    /*
-    参数：
-    返回值：
+    /**
+     * 求两数之和、之差
+     * 参数：
+     * 返回值：int[],整数数组
      */
     public static int[] method(int a,int b) {
         int sum=a+b;

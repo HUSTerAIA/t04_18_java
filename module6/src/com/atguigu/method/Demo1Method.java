@@ -7,6 +7,9 @@ public class Demo1Method {
         demo3();
     }
     public static void demo1(){
+        /*
+        无参无返回值
+         */
         System.out.println("方法1");
         System.out.println("方法1.1");
     }
