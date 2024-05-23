@@ -8,7 +8,7 @@ public class Test {
         person.speak("李四");
 
         Person person1 = new Person();
-        System.out.println(person1+"+++++++++");
+        System.out.println(person1+"+++++++++");        // 此时this指代person1
         person1.speak("王五");
 
     }

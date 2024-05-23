@@ -2,10 +2,10 @@ package com.atguigu.pack1;
 
 public class Person {
     private String name;    //私有化，仅本类内部使用
-    private int age;
+    private int age;        // 私有化
 
     /*
-    为name提供set/get方法
+    为name提供set/get方法，供外部调用
      */
     public void setName(String name1) {
         name=name1;
