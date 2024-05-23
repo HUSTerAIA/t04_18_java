@@ -2,15 +2,16 @@ package com.atguigu.pack3;
 
 public class Person {
     private String name;    //私有化，仅本类内部使用
-    private int age;
+    private int age;        // 封装
 
     /*
     为name提供set/get方法
      */
     public void setName(String name) {
-        this.name=name;
+        this.name=name;     // 当前对象赋值形参
     }
     public String getName(){
+        //无参有返回值
         return name;
     }
 

@@ -9,6 +9,7 @@ public class Person {
     }
 
     public Person(String name, int age){
+        // 有参构造
         this.name = name;
         this.age = age;
     }

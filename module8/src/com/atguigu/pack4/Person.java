@@ -1,11 +1,14 @@
 package com.atguigu.pack4;
 
+/**
+ * javabean
+ */
 public class Person {
     private String name;    //私有化，仅本类内部使用
     private int age;
 
     public Person(){
-        //jvm自带
+        //jvm自带,无参构造
     }
 
     /*
