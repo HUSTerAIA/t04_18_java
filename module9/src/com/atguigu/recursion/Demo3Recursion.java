@@ -10,7 +10,7 @@ public class Demo3Recursion {
         斐波那契数列
          */
         if(n==1||n==2){
-            return 1;
+            return 1;       // 出口
         }
         return method(n-2)+method(n-1);
     }

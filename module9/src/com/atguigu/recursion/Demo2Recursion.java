@@ -10,7 +10,7 @@ public class Demo2Recursion {
         阶乘
          */
         if(n==1){
-            return 1;
+            return 1;       // 程序出口
         }
         return n*method(n-1);
     }

@@ -22,7 +22,7 @@ public class Demo4Recursion {
        if(min>=max){
            return arr;
        }else{
-           return method(min,max,arr);
+           return method(min,max,arr);      // 继续反转，内层进1
        }
 
     }

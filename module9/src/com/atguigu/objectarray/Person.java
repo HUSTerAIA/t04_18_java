@@ -2,16 +2,17 @@ package com.atguigu.objectarray;
 
 public class Person {
     private String name;        // 成员变量私有化
-    private int age;
+    private int age;        // 封装
 
     public Person(String name, int age) {
+        // 有参构造
         this.name = name;
         this.age = age;
     }
     public Person(){
 
     }
-    public String getName() {
+    public String getName() {           //对外提供公有化接口
         return name;
     }
 
