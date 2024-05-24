@@ -1,7 +1,7 @@
 package com.atguigu.objectarray;
 
 public class Person {
-    private String name;
+    private String name;        // 成员变量私有化
     private int age;
 
     public Person(String name, int age) {
