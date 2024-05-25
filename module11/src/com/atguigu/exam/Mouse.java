@@ -7,7 +7,7 @@ public class Mouse implements USB{
 
     @Override
     public void open(){
-        System.out.println("鼠标开启");
+        System.out.println("鼠标开启");     // 重写抽象方法
 
     }
 
@@ -19,5 +19,5 @@ public class Mouse implements USB{
     //特有方法
     public void method(){
         System.out.println("鼠标点击");
-    }
+    }           // 特有方法
 }

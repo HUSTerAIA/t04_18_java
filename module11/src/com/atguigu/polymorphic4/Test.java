@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
         //多态new对象：向上转型
         Animal animal=new Dog();
-        animal.eat();   //调用重写方法
+        animal.eat();   //调用子类重写方法
 
         //向下转型
         Dog dog=(Dog)animal;

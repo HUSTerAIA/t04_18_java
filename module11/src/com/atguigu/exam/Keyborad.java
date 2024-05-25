@@ -6,7 +6,7 @@ public class Keyborad implements USB{
      */
 
     @Override
-    public void open(){
+    public void open(){         // 重写抽象方法
         System.out.println("键盘开启");
 
     }
@@ -19,5 +19,5 @@ public class Keyborad implements USB{
     //特有方法
     public void method(){
         System.out.println("键盘敲击");
-    }
+    }       // 特有方法
 }
