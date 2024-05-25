@@ -2,7 +2,7 @@ package com.atguigu.extends4;
 
 public class Zi extends Fu{
     public Zi(){
-//        super();
+//        super();  //默认存在，调用父类无参构造
         System.out.println("子类无参构造");
     }
 

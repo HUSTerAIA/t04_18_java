@@ -1,7 +1,7 @@
 package com.atguigu.extends5;
 
 public class Zi extends Fu{
-    int num=100;
+    int num=100;        // 重写
 
     public Zi(){
         super();    //调用父类无参构造
@@ -15,6 +15,6 @@ public class Zi extends Fu{
 
     public void method(){
         System.out.println(num);
-        System.out.println(super.num);
+        System.out.println(super.num);      // 调用父类成员变量
     }
 }

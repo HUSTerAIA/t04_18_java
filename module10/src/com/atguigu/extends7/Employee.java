@@ -1,11 +1,12 @@
 package com.atguigu.extends7;
 
 public class Employee {
+    // 父类，javabean
     private int id;
     private String name;
 
     public Employee(){
-
+    // 无参构造
     }
 
     public Employee(int id, String name) {

@@ -3,7 +3,7 @@ package com.atguigu.extends7;
 public class Test {
     public static void main(String[] args) {
         Teacher t=new Teacher();
-        t.setId(10);
+        t.setId(10);        // 继承
         t.setName("张三");
         System.out.println(t.getId()+t.getName());
 

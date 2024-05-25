@@ -7,8 +7,8 @@ public class Test {
         System.out.println(fu.num);
 
         Zi zi=new Zi();
-        System.out.println(zi.num);
-        System.out.println(zi.numFu);
+        System.out.println(zi.num);     // 重写
+        System.out.println(zi.numFu);       // 继承
 
 
         fu.methodFu();

@@ -1,6 +1,6 @@
 package com.atguigu.abstract1;
 
-public abstract class Animal {
+public abstract class Animal {  // 用于类
     private String name;
     private int age;
 
@@ -8,7 +8,7 @@ public abstract class Animal {
 
     }
 
-    public abstract void eat();
+    public abstract void eat();     // 抽象方法
 
     public Animal(String name, int age) {
         this.name = name;

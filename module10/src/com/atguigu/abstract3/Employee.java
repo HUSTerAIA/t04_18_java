@@ -1,6 +1,7 @@
 package com.atguigu.abstract3;
 
 public abstract class Employee {
+    // 父类，javabean，抽象类
     private int id;
     private String name;
 
@@ -27,6 +28,6 @@ public abstract class Employee {
     public void setName(String name) {
         this.name = name;
     }
-    public abstract void work();
+    public abstract void work();    // 抽象方法
 
 }

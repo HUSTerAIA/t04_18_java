@@ -2,7 +2,7 @@ package com.atguigu.extends1;
 
 public class Employee {
     String name;
-    private int age;
+    private int age;        // 无法继承私有成员
     String gender;
     public void work(){
         System.out.println("Employee works");

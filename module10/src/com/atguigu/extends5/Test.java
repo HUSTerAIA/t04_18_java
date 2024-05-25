@@ -9,8 +9,9 @@ public class Test {
         System.out.println("=====================");
 
         Zi zi1=new Zi(10);
-
+        System.out.println("=====================");
         System.out.println(zi.num);
+        System.out.println("=====================");
 
         zi.method();
     }

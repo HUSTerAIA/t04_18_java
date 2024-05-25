@@ -15,7 +15,7 @@ public class Test {
         fu.method();
 
         zi.methodZi();
-        zi.methodFu();
+        zi.methodFu();      // 继承
         zi.method();
     }
 }
