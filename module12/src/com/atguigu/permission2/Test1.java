@@ -4,7 +4,7 @@ import com.atguigu.permission1.Permission1;
 
 public class Test1 {
     /**
-     * 不同包，非子父类
+     * 不同包，非子父类,只能访问public
      */
     public void methodd(){
         Permission1 p=new Permission1();
