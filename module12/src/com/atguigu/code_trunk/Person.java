@@ -15,7 +15,7 @@ public class Person {
 
     //构造代码块
     {
-        System.out.println("代码块");
+        System.out.println("构造代码块");
     }
 
     //静态代码块
