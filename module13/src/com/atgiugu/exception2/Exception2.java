@@ -15,7 +15,7 @@ public class Exception2 {
         }else{
             //自定义异常
             try{
-                throw new LoginException1("异常");
+                throw new LoginException1("异常");        //try ... catch...
             }catch(Exception e){
                 System.out.println(e);       //异常类型和设置的异常信息
                 System.out.println(e.getMessage());     //异常信息

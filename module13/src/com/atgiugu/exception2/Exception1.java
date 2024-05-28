@@ -14,7 +14,7 @@ public class Exception1 {
             System.out.println("登录成功");
         }else{
             //自定义异常
-            throw new LoginException1("异常");
+            throw new LoginException1("异常");        // 自定义创建，传递message
         }
     }
 }

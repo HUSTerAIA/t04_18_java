@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 public class Exception5 {
     public static void main(String[] args) throws FileNotFoundException {    //异常往上throws
         int result=method1();
-        System.out.println(result);
+        System.out.println("result="+result);
     }
 
     public static int method1() {
@@ -17,7 +17,7 @@ public class Exception5 {
             System.out.println(e);  //处理异常
             return 2;
         } finally {
-            System.out.println("必须执行");
+            System.out.println("finally必须执行");
             return 3;   //结束方法
         }
     }

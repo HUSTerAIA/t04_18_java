@@ -3,7 +3,7 @@ package com.atgiugu.exception2;
 
 import javax.security.auth.login.LoginException;
 
-public class LoginException1 extends Exception{
+public class LoginException1 extends Exception{     // 继承顶端异常
     /*
     自定义异常对象，继承
      */

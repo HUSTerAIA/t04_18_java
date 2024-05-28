@@ -1,8 +1,8 @@
 package com.atgiugu.exception1;
 
 public class Exception2 {
-    public static void main(String[] args) throws Exception {
-        String s = "ahfj.java";
+    public static void main(String[] args) throws Exception {   // 上抛最顶端的异常类
+        String s = "ahfj.java1";
         method1(s);
     }
 

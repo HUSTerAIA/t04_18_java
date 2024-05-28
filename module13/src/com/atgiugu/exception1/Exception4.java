@@ -7,13 +7,13 @@ public class Exception4 {
         /*
         手动处理异常
          */
-        String s="sfh.java";
+        String s="sfh.java1";
         try {
             method1(s);
-        }catch (Exception e){
+        }catch (Exception e){       // 处理顶端异常
             System.out.println(e);
         }finally {
-            System.out.println("必须执行");
+            System.out.println("必须执行");     //不管是否存在异常都会执行
         }
     }
 

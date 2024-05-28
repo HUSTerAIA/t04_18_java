@@ -3,7 +3,7 @@ package com.atgiugu.exception;
 public class Exception1 {
     public static void main(String[] args) {
         //创建异常
-        String s="a.java1";
+        String s="a.java";
         method(s);
     }
 

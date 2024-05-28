@@ -9,24 +9,24 @@ public class Exception3 {
         String s=null;
         try{
             method1(s);
-        }catch(NullPointerException n){
+        }catch(NullPointerException n){ //分别处理两个异常
             System.out.println(n);
         }catch(FileNotFoundException f){
             System.out.println(f);
         }
-        //前面出现异常，处理，后面继续执行
+        //前面出现异常，处理，后面继续执行，不处理异常将停止运行
         method3();
-
+        method4();
         try{
             method2(s);
-        }catch(Exception e){
+        }catch(Exception e){        // 处理顶端异常
             e.printStackTrace();    //打印详细信息；
-        }
+        }       // 异常将在最后输出？
 
         method4();
     }
 
-    public static void method1(String s) throws NullPointerException,FileNotFoundException{  //上抛父类异常对象
+    public static void method1(String s) throws NullPointerException,FileNotFoundException{  //上抛两个异常对象
         //创建两个异常
         if (s == null) {
             throw new NullPointerException();
