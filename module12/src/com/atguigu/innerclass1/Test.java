@@ -8,14 +8,14 @@ public class Test {
             public void open(){
                 System.out.println("打开USB");
             }
-        }.open();
+        }.open();           // new 对象.重写方法
 
         //有名对象
         USB usb=new USB(){
             public void open(){
                 System.out.println("usb打开");
             }
-        };
-        usb.open();
+        };          // 对象名接收
+        usb.open();     // 调用重写方法
     }
 }

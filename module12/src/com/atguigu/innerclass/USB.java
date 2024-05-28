@@ -1,5 +1,5 @@
 package com.atguigu.innerclass;
 
 public interface USB {
-    public void open(); //接口方法
+    public void open(); //可以重写
 }
