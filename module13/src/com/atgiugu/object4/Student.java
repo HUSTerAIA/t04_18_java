@@ -40,7 +40,7 @@ public class Student implements Comparator {
 
 
     @Override
-    public int compare(Object o1, Object o2) {
+    public int compare(Object o1, Object o2) {      // 重写
         Student s1=(Student) o1;
         Student s2=(Student) o2;
         return s1.getScore()-s2.getScore();

@@ -2,7 +2,7 @@ package com.atgiugu.object2;
 
 import java.util.Objects;
 
-public class Person implements Cloneable{
+public class Person implements Cloneable{       // 实现cloneable接口
     String name;
     int age;
 
@@ -74,8 +74,8 @@ public class Person implements Cloneable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return age == person.age && Objects.equals(name, person.name);
+        Person person = (Person) o;     // 小类型接大类型，向下转型，强制类型转换
+        return age == person.age && Objects.equals(name, person.name);      // 比较内容
     }
 
 

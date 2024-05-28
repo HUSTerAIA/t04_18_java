@@ -1,6 +1,6 @@
 package com.atgiugu.object3;
 
-public class Student implements Comparable {
+public class Student implements Comparable {    // 实现comparable接口
     private String name;
     private int score;
 

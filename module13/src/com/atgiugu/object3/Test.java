@@ -1,5 +1,8 @@
 package com.atgiugu.object3;
 
+/**
+ * 接口comparable
+ */
 public class Test {
     public static void main(String[] args) {
         //将学生按照分数排序
@@ -15,7 +18,7 @@ public class Test {
         //冒泡排序
 
         for(int i=0;i<students.length-1;i++){
-            for (int j=0;j<students.length-1-i;j++){
+            for (int j=0;j<students.length-1-i;j++){        // 此处注意-i
                 if(students[j].compareTo(students[j+1])>0){
                     Student temp =students[j];
                     students[j]=students[j+1];
