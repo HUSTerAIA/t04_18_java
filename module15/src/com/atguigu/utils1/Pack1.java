@@ -1,7 +1,5 @@
 package com.atguigu.utils1;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 public class Pack1 {
     public static void main(String[] args) {
         //创建包装类

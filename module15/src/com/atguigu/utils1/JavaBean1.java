@@ -4,8 +4,8 @@ public class JavaBean1 {
     /*
     定义标准javabean
      */
-    private Integer uid;
-    private String name;
+    private Integer uid;        // 包装类
+    private String name;        // 引用数据类型
 
     public JavaBean1() {
 
