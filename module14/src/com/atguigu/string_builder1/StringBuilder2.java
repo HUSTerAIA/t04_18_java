@@ -16,7 +16,7 @@ public class StringBuilder2 {
         //翻转
         sb.reverse();
         //转换
-        String s1=sb.toString();
+        String s1=sb.toString();        // 同类型比较
         //比较
         if(s.equals(s1)){
             System.out.println("回文");

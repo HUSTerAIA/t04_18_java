@@ -14,7 +14,7 @@ public class StringBuilder1 {
         System.out.println(sb3);
         StringBuilder sb4=new StringBuilder("sdhfer");
         System.out.println(sb4);
-        System.out.println(sb3==sb4);
+        System.out.println(sb3==sb4);       // 两者地址值一致
 
         StringBuilder sb5=sb4.append("24vsd");
         System.out.println(sb4==sb5);
@@ -24,7 +24,7 @@ public class StringBuilder1 {
         System.out.println(sb4);
 
         System.out.println(sb4.reverse());
-        String s=sb4.toString();
+        String s=sb4.toString();        // 类型转换
         System.out.println(s);
 
     }
