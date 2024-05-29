@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Calendar1 {
     public static void main(String[] args) {
-        Calendar c1=Calendar.getInstance();     //抽象类，多态
+        Calendar c1=Calendar.getInstance();     //抽象类，多态   访问静态成员
         System.out.println("c1 = " + c1);
 
         //返回给定日历字段的值
@@ -15,7 +15,7 @@ public class Calendar1 {
         System.out.println("year1 = " + year1);
 
         //设置字段
-        c2.set(Calendar.YEAR,2025);
+        c2.set(Calendar.YEAR,2025);     // 非静态成员方法set,静态成员变量YEAR
         System.out.println(c2.get(Calendar.YEAR));
 
         //增加字段
@@ -40,14 +40,14 @@ public class Calendar1 {
         6.输出结果
 
          */
-        Calendar c1=Calendar.getInstance();
+        Calendar c1=Calendar.getInstance();     // 返回一个calendar对象
         System.out.println("输入年份：");
         Scanner sc=new Scanner(System.in);
         int year1=sc.nextInt();
-        c1.set(year1,2,1);
-        c1.add(Calendar.DAY_OF_MONTH,-1);
+        c1.set(year1,2,1);      // 设置该年3月1日
+        c1.add(Calendar.DAY_OF_MONTH,-1);       // 该calendar对象3月1日-一天
 
-        if(c1.get(Calendar.DAY_OF_MONTH)==29){
+        if(c1.get(Calendar.DAY_OF_MONTH)==29){      // 获取更新后calendar对象的静态成员属性day
             System.out.println("闰年");
         }else {
             System.out.println("平年");

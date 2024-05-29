@@ -16,7 +16,7 @@ public class Date1 {
 
         //设置时间
         Date date3=new Date();
-        date3.setTime(1000L);   //传递毫秒值
+        date3.setTime(1000L);   //传递毫秒值,1000ms=1s
         System.out.println(date3.getTime());    //返回毫秒值
     }
 }

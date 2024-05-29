@@ -2,11 +2,14 @@ package com.atguigu.utils1;
 
 import java.util.Arrays;
 
+/**
+ * 数组arrray，方法静态
+ */
 public class Arrays1 {
     public static void main(String[] args) {
         //格式转换
-        int[] arr1={2,4,6,3,5,9};
-        System.out.println(Arrays.toString(arr1));
+        int[] arr1={2,4,6,3,5,9};       // 数组对象
+        System.out.println(Arrays.toString(arr1));      //转成string
 
         //数组排序
         Arrays.sort(arr1);

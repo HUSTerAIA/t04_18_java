@@ -4,6 +4,9 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * 时间差：精确日时秒
+ */
 public class Duration1 {
     public static void main(String[] args) {
         //计算日期偏差

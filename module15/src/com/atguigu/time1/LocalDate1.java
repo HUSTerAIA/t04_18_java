@@ -6,14 +6,14 @@ import java.time.LocalDateTime;
 public class LocalDate1 {
     public static void main(String[] args) {
         //创建对象
-        LocalDate ld=LocalDate.now();   //构造私有化，不能new对象，访问静态成员
+        LocalDate ld=LocalDate.now();   //构造私有化，不能new对象，访问静态成员，直接类名.方法
         System.out.println("ld = " + ld);
         //设置时间
-        LocalDate ld1=LocalDate.of(2024,4,1);
+        LocalDate ld1=LocalDate.of(2024,4,1);       // 按照给定日期对象
         System.out.println("ld1 = " + ld1);
 
         //LocalDateTime
-        LocalDateTime ldt=LocalDateTime.now();
+        LocalDateTime ldt=LocalDateTime.now();      // 获取当前年月日时分秒
         System.out.println("ldt = " + ldt);
 
         LocalDateTime ldt1=LocalDateTime.of(2024,4,1,12,34,56);
@@ -24,10 +24,10 @@ public class LocalDate1 {
         System.out.println(ld1.getMonthValue());
         System.out.println(ld1.getDayOfMonth());
 
-        //链式调用
+        //链式调用，设置时间with...
         LocalDate ld2=LocalDate.now();
         System.out.println("ld2 = " + ld2);
-        LocalDate ld3=ld2.withYear(2023).withMonth(1).withDayOfMonth(2);
+        LocalDate ld3=ld2.withYear(2023).withDayOfMonth(2).withMonth(1);
         System.out.println("ld3 = " + ld3);
 
         //改变时间

@@ -4,14 +4,14 @@ import java.io.UnsupportedEncodingException;
 
 public class String1 {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        String s = "abcdef";
-        char[] chars = s.toCharArray();     // 字符串转换成字符
+        String s = "abcdef";        // 构造string对象
+        char[] chars = s.toCharArray();     // 字符串转换成字符，非静态成员
         for (int i = 0; i < chars.length; i++) {
             System.out.println(chars[i]);
         }
         System.out.println("===========");
         byte[] bytes = s.getBytes();        // 转成char
-        for (int i = 0; i < bytes.length; i++) {
+        for (int i = 0; i < bytes.length; i++) {        // length为成员变量
             System.out.println(bytes[i]);
         }
         System.out.println("===========");

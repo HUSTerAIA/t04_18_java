@@ -3,6 +3,9 @@ package com.atguigu.time1;
 import java.time.LocalDate;
 import java.time.Period;
 
+/**
+ * 时间差：年月日
+ */
 public class Period1 {
     public static void main(String[] args) {
         //计算日期偏差
@@ -14,5 +17,6 @@ public class Period1 {
         System.out.println(p.getYears()+"年");
         System.out.println(p.getMonths()+"月");
         System.out.println(p.getDays()+"日");
+
     }
 }
