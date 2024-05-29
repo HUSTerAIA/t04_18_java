@@ -22,7 +22,7 @@ public class String2 {
         String str = sc.next();
         //转换
         byte[] bytes = str.getBytes();
-        char[] chars=str.toCharArray();
+        char[] chars=str.toCharArray(); // 转成字符
         //判断
         for (int i = 0; i < bytes.length; i++) {
             if (bytes[i] >= 65 && bytes[i] <= 90) {

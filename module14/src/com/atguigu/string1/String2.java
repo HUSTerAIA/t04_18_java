@@ -14,21 +14,21 @@ public class String2 {
         5.简化形式
         String s="xxx";*/
 
-        String s=new String();
-        System.out.println(s);
+        String s=new String();  // 空字符串
+        System.out.println("s="+s);
 
         String s0=new String("ab");
         System.out.println(s0);
 
         char[] value={'a','b'};
-        String s1=new String(value);
+        String s1=new String(value);        // string(char[])
         System.out.println(s1);
 
         byte[] bytes={'a','b'};
-        String s2=new String(bytes);
+        String s2=new String(bytes);        // string(byte[])
         System.out.println(s2);
 
-        String s3="ab";
+        String s3="ab";     // 简化形式
         System.out.println(s3);
 
     }

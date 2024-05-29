@@ -8,7 +8,7 @@ public class String2 {
         String s4="abc"+"def";
         String s5=s1+"def";
         String s6=s1+s2;
-        System.out.println(s3==s4);
+        System.out.println(s3==s4);     // "abcdef"已经被创建，不可变
         System.out.println(s3==s5);
         System.out.println(s3==s6);
 

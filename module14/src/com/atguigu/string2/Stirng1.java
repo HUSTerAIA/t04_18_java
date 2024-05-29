@@ -8,7 +8,7 @@ public class Stirng1 {
         2.String(byte[] bytes, int offset, int length)
 //类似*/
         char[] chars={'a','b','c','d','e','f','g','h'};
-        String s1=new String(chars,3,2);
+        String s1=new String(chars,3,2);    // 子串
         System.out.println(s1);
 
         byte[] bytes={'a','b','c','d','e','f','g','h'};

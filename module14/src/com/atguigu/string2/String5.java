@@ -18,7 +18,7 @@ public class String5 {
             System.out.println("s1==abc");
         }
 
-        if(Objects.equals(s4,s5)){
+        if(Objects.equals(s4,s5)){      // objects基本类
             //可以防止两个为空指针
             System.out.println("s4==s5");
         }
