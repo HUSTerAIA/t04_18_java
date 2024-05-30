@@ -23,7 +23,7 @@ public class BaoZiPu1 {
 
     //getset方法
 
-    //改造为消费包子,同步方法
+    //改造为消费包子,同步方法：非静态     判断是否有包子-》消费-》唤醒   均同步
     public synchronized void getCount() {
         //无包子
         if (this.flag == false) {

@@ -39,7 +39,7 @@ public class BaoZiPu1 {
         return flag;
     }
 
-    public void setFlag(boolean flag) {
+    public void setFlag(boolean flag) {     // 是否有包子
         this.flag = flag;
     }
 }

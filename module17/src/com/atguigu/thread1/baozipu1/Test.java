@@ -6,8 +6,8 @@ public class Test {
         BaoZiPu1 baozipu=new BaoZiPu1();
 
         //创建线程实现类
-        Productor1 p=new Productor1(baozipu);
-        Comsumer1 c=new Comsumer1(baozipu);
+        Productor1 p=new Productor1(baozipu);       // 传递同一个锁对象
+        Comsumer1 c=new Comsumer1(baozipu);     // 有参构造
 
         //创建线程
         Thread t1=new Thread(p);

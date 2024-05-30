@@ -6,9 +6,9 @@ public class Comsumer1 implements Runnable {
     和生产相反
      */
 //    BaoZiPu1 baozipu = new BaoZiPu1();
-    private BaoZiPu1 baozipu;
+    private BaoZiPu1 baozipu;       // 私有锁对象
 
-    public Comsumer1(BaoZiPu1 baozipu) {
+    public Comsumer1(BaoZiPu1 baozipu) {        // 有参构造
         this.baozipu = baozipu;
     }
 

@@ -1,6 +1,6 @@
 package com.atguigu.thread1.baozipu1;
 
-public class Productor1 implements Runnable {
+public class Productor1 implements Runnable {       // 1.实现runnable
     /*
     生产包子
     1.判断是否有包子
@@ -9,35 +9,35 @@ public class Productor1 implements Runnable {
      */
 //    BaoZiPu1 baozipu = new BaoZiPu1();
 
-    private BaoZiPu1 baozipu;
+    private BaoZiPu1 baozipu;       // 锁对象
 
     public Productor1(BaoZiPu1 baozipu) {
         this.baozipu = baozipu;
     }
 
-    //重写run()
+    //2.重写run()
     public void run() {
         while (true) {
             try {
                 Thread.sleep(100L);
-            } catch (InterruptedException e) {
+            } catch (InterruptedException e) {      // 3.处理异常
                 throw new RuntimeException(e);
             }
-            synchronized (baozipu) {
+            synchronized (baozipu) {        // 4.同步代码块
                 //有包子
-                if (baozipu.isFlag() == true) {
+                if (baozipu.isFlag() == true) {     //a.判断是否有包子
                     try {
-                        baozipu.wait();
+                        baozipu.wait();             // b.有包子停止生产
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
 
                 }
                 //无包子：生产包子
-                baozipu.setCount();
+                baozipu.setCount();             // c.没有包子继续生产，同时设置flag
                 baozipu.setFlag(true);
                 //唤醒消费包子
-                baozipu.notify();
+                baozipu.notify();           // d.唤醒消费进程
             }
         }
 

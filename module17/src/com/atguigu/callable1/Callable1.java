@@ -2,7 +2,7 @@ package com.atguigu.callable1;
 
 import java.util.concurrent.Callable;
 
-public class Callable1 implements Callable<String> {
+public class Callable1 implements Callable<String> {        // 实现callable接口，指定返回值类型为string
     /*
     实现Callable类
      */
