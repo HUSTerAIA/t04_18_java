@@ -9,7 +9,7 @@ public class ThreadDemo {
         t2.setName("线程2");
 
 //设置守护线程
-        t1.setDaemon(true);
+        t1.setDaemon(true);     //非守护线程t2结束，告知守护线程t1结束
 
         t1.start();
         t2.start();

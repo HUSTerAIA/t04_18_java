@@ -30,7 +30,7 @@ public class Tikect1 implements Runnable {
     }
 
     public void method2() {
-        synchronized (this) {
+        synchronized (this) {       // 默认锁：this
             System.out.println("this = " + this);
             System.out.println(Thread.currentThread().getName() + "买票" + tikects--);
         }

@@ -8,13 +8,13 @@ public class Tikect1 implements Runnable {
     static int tikects = 30;
 
     //静态方法
-    public static synchronized void method() {
+    public synchronized static  void method() {
 
         System.out.println(Thread.currentThread().getName() + "买票" + tikects--);
     }
 
     public static void method2() {
-        synchronized (Tikect1.class) {
+        synchronized (Tikect1.class) {      // 默认锁：类名.class对象
             System.out.println("this = " + Tikect1.class);
             System.out.println(Thread.currentThread().getName() + "买票" + tikects--);
         }
@@ -30,8 +30,8 @@ public class Tikect1 implements Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-//            method();
-            method2();
+            method();
+//            method2();
         }
     }
 }

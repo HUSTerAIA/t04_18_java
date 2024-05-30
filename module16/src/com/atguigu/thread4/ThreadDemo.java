@@ -14,7 +14,7 @@ public class ThreadDemo {
 
 
         //插队
-        t1.join();
+        t1.join();      // 非静态成员
 
         for (int i = 1; i < 50; i++) {
             System.out.println(Thread.currentThread().getName() + "执行..." + i);
