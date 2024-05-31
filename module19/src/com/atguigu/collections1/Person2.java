@@ -1,6 +1,6 @@
 package com.atguigu.collections1;
 
-public class Person2 implements Comparable<Person2>{
+public class Person2 implements Comparable<Person2>{        // 1.实现接口
     /*
     标准javabean
      */
@@ -40,7 +40,7 @@ public class Person2 implements Comparable<Person2>{
     }
 
     @Override
-    public int compareTo(Person2 o) {
+    public int compareTo(Person2 o) {       // 2.重写抽象方法
         return this.getAge()-o.getAge();
     }
 }
