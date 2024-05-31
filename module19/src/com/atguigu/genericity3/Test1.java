@@ -20,7 +20,7 @@ public class Test1 {
         method(list1);
     }
 
-    public static void method(ArrayList<?> arr){
+    public static void method(ArrayList<?> arr){        // 通配符：未指定泛型类型
         for(Object o:arr){
             System.out.println(o);
         }

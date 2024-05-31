@@ -2,6 +2,10 @@ package com.atguigu.genericity1;
 
 import java.util.Arrays;
 
+/**
+ * 实现带泛型的接口
+ * @param <E>
+ */
 public class ListImple1<E> implements List1<E>{
     /*
     实现接口
@@ -15,7 +19,7 @@ public class ListImple1<E> implements List1<E>{
     定义add方法
      */
     public boolean add(E e) {
-        obj[size]=e;
+        obj[this.size]=e;
         size++;
         return true;
     }

@@ -2,7 +2,12 @@ package com.atguigu.genericity1;
 
 import java.util.Arrays;
 
-public class Genericity1<E> {
+/**
+ * 泛型：统一数据类型，防止未来出现类型转换异常
+ * 定义包含泛型的类
+ * @param <E>
+ */
+public class Genericity1<E> {       // 默认object，基类
     /**
      * 定义含泛型的类
      */
@@ -16,7 +21,7 @@ public class Genericity1<E> {
      */
     public boolean add(E e) {
         obj[size]=e;
-        size++;
+        this.size++;
         return true;
     }
 
@@ -24,8 +29,8 @@ public class Genericity1<E> {
     定义get方法获取元素值
      */
 
-    public E get(int index){
-        return (E) obj[index];
+    public E get(int index){        // 返回值：泛型E
+        return (E) obj[index];      // 强制类型转换
     }
 
     /*

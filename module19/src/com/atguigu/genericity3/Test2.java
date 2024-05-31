@@ -3,12 +3,15 @@ package com.atguigu.genericity3;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * 泛型通配符
+ */
 public class Test2 {
     public static void main(String[] args) {
         /*
         泛型上下限
          */
-//Integer->Number->Object
+//Integer->Number->Object基类
         //String->Object
 
         ArrayList<String> list1 = new ArrayList<>();

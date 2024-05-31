@@ -25,7 +25,7 @@ public class ListImple1 implements List1<String> {
      */
 
     public String get(int index){
-        return (String) obj[index];
+        return (String) obj[index];     // 强制类型转换
     }
 
     /*
