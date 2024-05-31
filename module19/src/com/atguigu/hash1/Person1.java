@@ -2,6 +2,9 @@ package com.atguigu.hash1;
 
 import java.util.Objects;
 
+/**
+ * 重写hashcode\equals
+ */
 public class Person1 {
     private String name;
     private int age;

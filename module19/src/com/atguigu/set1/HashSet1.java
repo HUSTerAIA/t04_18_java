@@ -13,8 +13,9 @@ public class HashSet1 {
         set1.add("A");
         set1.add("a");
 
-        System.out.println(set1);
+        System.out.println(set1);       // 不重复无序
 
+        //迭代器遍历元素
         Iterator<String> iter = set1.iterator();
         while (iter.hasNext()) {
             System.out.println(iter.next());
@@ -27,7 +28,7 @@ public class HashSet1 {
         set2.add("C");
         set2.add("A");
         set2.add("a");
-        System.out.println(set2);
+        System.out.println(set2);       //不重复，有序
         for (String s : set2) {
             System.out.println(s);
         }

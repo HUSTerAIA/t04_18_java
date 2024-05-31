@@ -9,19 +9,19 @@ public class Hash1 {
         System.out.println(p1);
         System.out.println(p2);     //没有重写hash代表地址值,重写代表内容值
 
-        System.out.println(p1.hashCode());
+        System.out.println(p1.hashCode());      // 地址值一致
         System.out.println(p2.hashCode());
 
         System.out.println("================");
         String s="shjgf";
-        String s1="iuireikjv";
-        System.out.println(s1.hashCode());      //String重写
+        String s1="shjgf1";
+        System.out.println(s1.hashCode());      //String重写，内容不同
         System.out.println(s.hashCode());
 
         System.out.println("==================");
         String s2="通话";
         String s3="重地";
-        System.out.println(s2.hashCode());
+        System.out.println(s2.hashCode());      // 内容不同，但是哈希值一致
         System.out.println(s3.hashCode());
     }
 }
