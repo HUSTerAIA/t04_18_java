@@ -5,13 +5,13 @@ import java.util.TreeSet;
 
 public class Treeset1 {
     public static void main(String[] args) {
-        TreeSet<String> ts = new TreeSet();
+        TreeSet<String> ts = new TreeSet();     // 单列集合collection的set
         ts.add("abds");
         ts.add("bshjfd");
         ts.add("adfg");
         ts.add("cfdhd");
         //默认自动排序（ASCII)
-        System.out.println(ts);
+        System.out.println(ts);     // 自动排序
 
         System.out.println("=========-------------====");
         //自定义比较器
@@ -24,7 +24,7 @@ public class Treeset1 {
 
         ts2.add(new Person("abds", 22));
         ts2.add(new Person("bshjfd", 23));
-        ts2.add(new Person("adfg", 24));
+        ts2.add(new Person("adfg", 23));
         ts2.add(new Person("cfdhd", 25));
         System.out.println(ts2);
     }

@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class TreeMap1 {
     public static void main(String[] args) {
-        TreeMap<Integer,String> tm = new TreeMap();
+        TreeMap<Integer,String> tm = new TreeMap();     // 双列集合map
         tm.put(1,"abds");
         tm.put(2,"bshjfd");
         tm.put(1,"adfg");
@@ -16,9 +16,9 @@ public class TreeMap1 {
 
         System.out.println("------------------------");
         //自定义比较器
-        TreeMap<Person,String> tm2=new TreeMap<>(new Comparator<Person>() {
+        TreeMap<Person,String> tm2=new TreeMap<>(new Comparator<Person>() {     // 匿名  1.创建比较器对象
             @Override
-            public int compare(Person o1, Person o2) {
+            public int compare(Person o1, Person o2) {          // 2.重写抽象方法
                 return o1.getAge()-o2.getAge();
             }
         });
