@@ -7,6 +7,12 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * 输入流：is
+ * 基本字节output写入流：fos
+ * 输出流：os
+ *
+ */
 public class CloseAll1 {
     //私有构造
     private CloseAll1() {

@@ -9,6 +9,9 @@ import java.util.UUID;
 
 import static com.atguigu.upload1.CloseAll1.closeAll;
 
+/**
+ * ss-s-is-fos
+ */
 public class Server1 {
     public static void main(String[] args) throws Exception {
         /**
@@ -28,13 +31,13 @@ public class Server1 {
         while (true) {
             //等待accept
             Socket s = ss.accept();
-
-            new Thread(new Runnable() {
+            // 开启多线程
+            new Thread(new Runnable() {     // 实现类对象
                 /*
 多线程，其实不用关闭服务器
  */
                 @Override
-                public void run() {
+                public void run() {     // 重写run方法
                     InputStream is = null;
                     FileOutputStream fos = null;
                     OutputStream os = null;
