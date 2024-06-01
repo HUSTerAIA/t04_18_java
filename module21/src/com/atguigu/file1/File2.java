@@ -2,9 +2,12 @@ package com.atguigu.file1;
 
 import java.io.File;
 
+/**
+ * 创建file：文件/文件夹路径名的抽象表示
+ */
 public class File2 {
     public static void main(String[] args) {
-        File file1 = new File("D:\\JetBrains\\workspace\\test\\io", "1.jpg");
+        File file1 = new File("D:\\JetBrains\\workspace\\test\\io", "1.jpg");       // 反斜杠\表示转义
         System.out.println(file1);
 
         File file2 = new File("D:\\JetBrains\\workspace\\test\\io");

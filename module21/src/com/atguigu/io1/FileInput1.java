@@ -41,9 +41,11 @@ public class FileInput1 {
         数组定义多长，每次读取多少个数据，一般定义为1024的倍数；
         如果剩余字节不够则有多少读取多少，剩余空间仍然保存上一次读取的部分数据；
          */
+
+        // 读取指定长度数据
         byte[] bytes = new byte[2];
         int len = fis.read(bytes);
-        System.out.println(len);
+        System.out.println("len="+len);
         System.out.println(new String(bytes, 0, len));
 
         System.out.println("-------------");
@@ -51,6 +53,8 @@ public class FileInput1 {
         一次性连续读取
          */
         //定义变量接受读取到的字节数
+
+        // 一次性读取全部
         int num;
         while ((num = fis.read(bytes)) != -1) {     //有效数据
             System.out.println(new String(bytes, 0, num));

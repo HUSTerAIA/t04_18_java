@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * 写文件
+ */
 public class Io1 {
     public static void main(String[] args) throws IOException {
         /*
@@ -44,7 +47,7 @@ public class Io1 {
         //写入多个字节
         FileOutputStream fos = new FileOutputStream("io\\1.txt");
 //        byte[] bytes = {97, 98, 99,100};
-        fos.write("你好".getBytes());
+        fos.write("你好".getBytes());     // string字符串转成bytes数组
         fos.close();
     }
 
