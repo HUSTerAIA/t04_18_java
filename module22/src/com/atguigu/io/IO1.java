@@ -2,6 +2,9 @@ package com.atguigu.io;
 
 import java.io.*;
 
+/**
+ * 基本流包装成缓冲流
+ */
 public class IO1 {
     public static void main(String[] args) throws Exception {
         //文件复制
@@ -14,7 +17,7 @@ public class IO1 {
         //基本流复制
         long start = System.currentTimeMillis();
 
-        FileInputStream fis = new FileInputStream("io\\1.jpg");
+        FileInputStream fis = new FileInputStream("io\\1.jpg");     // IO流：字节流：基本流：输入流
         FileOutputStream fos = new FileOutputStream("io\\1_copy.jpg");
         //边读边写
         int len;
@@ -30,11 +33,15 @@ public class IO1 {
         fis.close();
     }
 
+    /**
+     * 基本流转成缓冲流
+     * @throws Exception
+     */
     public static void method2() throws Exception {
-        //基本流复制
+        //缓冲流复制
         long start = System.currentTimeMillis();
 
-        FileInputStream fis = new FileInputStream("io\\1.jpg");
+        FileInputStream fis = new FileInputStream("io\\1.jpg");  // IO流：字节流：缓冲流：输入流
         FileOutputStream fos = new FileOutputStream("io\\1_copy.jpg");
 
         //缓冲流对象

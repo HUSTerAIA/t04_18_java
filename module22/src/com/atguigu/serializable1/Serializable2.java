@@ -4,6 +4,10 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
+/**
+ * 序列化流
+ * input读取文件
+ */
 public class Serializable2 {
     public static void main(String[] args) throws Exception {
         //反序列化，读取文件

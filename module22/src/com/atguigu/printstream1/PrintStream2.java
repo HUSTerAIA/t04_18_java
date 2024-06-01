@@ -4,6 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+/**
+ * 打印流续写
+ * 日志附加进入文件
+ */
 public class PrintStream2 {
     public static void main(String[] args) throws FileNotFoundException {
         //打印流

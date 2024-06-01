@@ -5,6 +5,10 @@ import java.io.ObjectOutputStream;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/**
+ * 序列化流
+ * output写入文件
+ */
 public class Serializable1 {
     //序列化,写文件
     public static void main(String[] args) throws Exception {

@@ -3,6 +3,10 @@ package com.atguigu.printstream1;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
+/**
+ * 打印流
+ * 日志存入文件
+ */
 public class PrintStream1 {
     public static void main(String[] args) throws FileNotFoundException {
         //打印流
@@ -12,6 +16,6 @@ public class PrintStream1 {
 
         System.out.println("abc");
         System.out.println("你好");
-        ps.close();
+        ps.close();     // 关闭流
     }
 }
