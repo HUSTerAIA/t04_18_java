@@ -2,7 +2,7 @@ package com.atguigu.annotation0;
 
 import java.util.ArrayList;
 
-@SuppressWarnings("all")
+@SuppressWarnings("all")        // 忽略警告
 public class Test0 {
     public static void main(String[] args) {
         Person0 p = new Person0();

@@ -10,10 +10,10 @@ public class Test1 {
          * 3.true则获取
          */
         Class<BookShelf> bookShelfClass = BookShelf.class;
-        boolean b = bookShelfClass.isAnnotationPresent(Book.class);
+        boolean b = bookShelfClass.isAnnotationPresent(Book.class);     // 判断是否有注解
         System.out.println(b);
         if (b) {
-            Book book = bookShelfClass.getAnnotation(Book.class);
+            Book book = bookShelfClass.getAnnotation(Book.class);       // 获取注解
             System.out.println(book.bookName());
             System.out.println(Arrays.toString(book.author()));
             System.out.println(book.price());

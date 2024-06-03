@@ -4,6 +4,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @test不能修饰静态方法、带参数、带返回值
+ * @before在@test之前运行
+ * @after之后
+ */
 public class Test0 {
     @Test
     public void method() {

@@ -15,19 +15,19 @@ public class Reflect0 {
          */
         Properties prop = new Properties();
         InputStream in =
-                Reflect0.class.getClassLoader().getResourceAsStream("prop.properties");
+                Reflect0.class.getClassLoader().getResourceAsStream("prop.properties");     // 0.prop配置文件放在自己创建的模块下的resource文件夹下
         prop.load(in);
 
 //        System.out.println(prop);   //测试
 
-        String className = prop.getProperty("className");
-        Class<?> class1 = Class.forName(className);
-        Object o = class1.newInstance();
+        String className = prop.getProperty("className");       // 1.获取文件中的指定属性
+        Class<?> class1 = Class.forName(className);     // 2.创建类对象
+        Object o = class1.newInstance();        // 3.构造
 
-        String methodName = prop.getProperty("methodName");
-        Method method = class1.getMethod(methodName);
+        String methodName = prop.getProperty("methodName");     //4.获取文件中的指定属性
+        Method method = class1.getMethod(methodName);       // 5.获取方法
 
-        method.invoke(o);
+        method.invoke(o);       // 6.执行方法
 
 
     }

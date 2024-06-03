@@ -2,6 +2,9 @@ package com.atguigu.reflect1;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 创建有参对象
+ */
 public class Reflect2 {
     public static void main(String[] args) throws Exception{
         /*
@@ -12,7 +15,7 @@ public class Reflect2 {
         //获取空参构造
         Constructor<Person0> cons=person0Class.getConstructor(String.class,Integer.class);
         //利用反射api创建对象，类比于：Person0 p=new Person0(...)
-        Person0 p=cons.newInstance("ahf",78);
+        Person0 p=cons.newInstance("ahf",78);       // 有参构造
         System.out.println("p = " + p);
 
     }

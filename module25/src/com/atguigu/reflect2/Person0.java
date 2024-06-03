@@ -41,7 +41,7 @@ public class Person0 {
                 '}';
     }
 
-    private void eat(){
+    private void eat(){     // 私有
         System.out.println("吃饭");
     }
 }

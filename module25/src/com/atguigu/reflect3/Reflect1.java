@@ -2,6 +2,9 @@ package com.atguigu.reflect3;
 
 import java.lang.reflect.Field;
 
+/**
+ * 暴力反射
+ */
 public class Reflect1 {
     public static void main(String[] args) throws Exception {
 //        get1();
@@ -30,7 +33,7 @@ public class Reflect1 {
         Class<Person0> personClass = Person0.class;
         Person0 p = personClass.newInstance();
         Field filed = personClass.getDeclaredField("age");
-        filed.setAccessible(true);
+        filed.setAccessible(true);      // 先解除权限
         //调用set方法为属性赋值
         filed.set(p, 20);
         //调用get方法

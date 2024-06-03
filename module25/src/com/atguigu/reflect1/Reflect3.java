@@ -2,6 +2,9 @@ package com.atguigu.reflect1;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 获取全部构造
+ */
 public class Reflect3 {
     public static void main(String[] args) {
         Class<Person0> personClass = Person0.class;

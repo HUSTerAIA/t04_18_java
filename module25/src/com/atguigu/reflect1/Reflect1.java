@@ -2,6 +2,9 @@ package com.atguigu.reflect1;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 创造无参对象
+ */
 public class Reflect1 {
     public static void main(String[] args) throws NoSuchMethodException, InstantiationException, IllegalAccessException {
         //获取class对象
