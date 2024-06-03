@@ -1,6 +1,9 @@
 package com.atguigu.design1;
 
-public abstract class Hotel1 {
+/**
+ * 模板模式
+ */
+public abstract class Hotel1 {      // 抽象类
     /**
      * 饭店抽象类
      */
@@ -11,6 +14,6 @@ public abstract class Hotel1 {
     }
 
     //不确定的方法
-    public abstract void eat();
+    public abstract void eat();     // 抽象方法
 
 }

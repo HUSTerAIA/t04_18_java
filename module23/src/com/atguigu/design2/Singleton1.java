@@ -1,5 +1,10 @@
 package com.atguigu.design2;
 
+/**
+ * 1.构造私有化
+ * 2.私有静态自动创建自身对象，类似set
+ * 3.公有静态提供自身对象，类似get
+ */
 public class Singleton1 {
     /*
     饿汉式
