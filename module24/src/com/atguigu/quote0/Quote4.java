@@ -2,6 +2,11 @@ package com.atguigu.quote0;
 
 import java.util.function.Function;
 
+/**
+ * 引用数组
+ * 1.重写方法apply：形参integer，返回值int[]数组
+ * 2.引用方法int[]:形参integer，返回值new int[]数组
+ */
 public class Quote4 {
     public static void main(String[] args) {
         method(new Function<Integer, int[]>() {

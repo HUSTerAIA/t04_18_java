@@ -16,7 +16,7 @@ public class Lambda2 {
         pList.add(person2);
         pList.add(person3);
 
-        Collections.sort(pList, new Comparator<Person1>() {
+        Collections.sort(pList, new Comparator<Person1>() {     // 匿名内部类，函数式接口作为方法参数传递
             @Override
             public int compare(Person1 o1, Person1 o2) {
                 return o1.getAge() - o2.getAge();
@@ -28,7 +28,7 @@ public class Lambda2 {
         }
 
         System.out.println("----------------lambda--------------");
-        Collections.sort(pList, (Person1 o1, Person1 o2) -> {
+        Collections.sort(pList, (Person1 o1, Person1 o2) -> {       // 重写方法参数（）->重写方法体{}
             return o1.getAge() - o2.getAge();
 
         });
@@ -36,8 +36,8 @@ public class Lambda2 {
             System.out.println(p);
         }
         System.out.println("--------------简化lambda-------------------");
-        Collections.sort(pList, (o1, o2) ->
-                o1.getAge() - o2.getAge()
+        Collections.sort(pList, (o1, o2) ->     // 重写方法的参数类型省略
+                o1.getAge() - o2.getAge()       // 方法体只有一句话
         );
         for (Person1 p : pList) {
             System.out.println(p);

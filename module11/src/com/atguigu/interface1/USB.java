@@ -5,7 +5,7 @@ public interface USB {      // 接口，一个标准
     public abstract void open();
 
 
-    String close(String msg);       // 访问权限为默认空
+    String close(String msg);       // public abstract默认存在
 
 
     //默认方法

@@ -2,6 +2,9 @@ package com.atguigu.interface1;
 
 import java.util.function.Predicate;
 
+/**
+ * 判断型接口
+ */
 public class Predicate1 {
     public static void main(String[] args) {
         //判断
@@ -13,8 +16,8 @@ public class Predicate1 {
         },"shfj");
 
         System.out.println("-------lambda-----------");
-        method(( s) ->
-                 s.length()==1
+        method( s ->
+                 s.length()==1      //重写方法体只有一句话，带return
 
         ,"shfj");
 

@@ -26,7 +26,7 @@ public class Stream3 {
 
     public static void foreach1() {
         //遍历
-        Stream<String> stream1 = Stream.of("a", "b", "c");
+        Stream<String> stream1 = Stream.of("a", "b", "c");      // 针对数组的静态方法
 /*        stream1.forEach(new Consumer<String>() {
             @Override
             public void accept(String s) {
@@ -34,8 +34,8 @@ public class Stream3 {
             }
         });     //forEach是一个终结方法*/
         System.out.println("--------lambda------------");
-        stream1.forEach((s) -> {
-            System.out.println(s);
+        stream1.forEach((s) -> {        // 方法参数只有一个
+            System.out.println(s);       // 方法体只有一句话
 
         });
     }
@@ -103,7 +103,7 @@ public class Stream3 {
      */
     public static void inver0() {
         Stream<String> stream1 = Stream.of("a", "b", "c");
-        List<String> list0 = stream1.collect(Collectors.toList());
+        List<String> list0 = stream1.collect(Collectors.toList());      // 转成集合list
         System.out.println(list0);
 
     }
@@ -126,6 +126,6 @@ public class Stream3 {
             public String apply(Integer num) {
                 return num+"";
             }
-        }).forEach(s-> System.out.println(s+1));
+        }).forEach(s-> System.out.println(s+  1));
     }
 }

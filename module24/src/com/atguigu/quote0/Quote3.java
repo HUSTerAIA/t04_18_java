@@ -4,6 +4,11 @@ import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 import java.util.function.Function;
 
+/**
+ * 引用构造方法
+ * 1.重写方法apply形参string,返回值person1
+ * 2.引用方法new构造：形参string，返回值person1
+ */
 public class Quote3 {
     public static void main(String[] args) {
 
@@ -20,8 +25,8 @@ public class Quote3 {
         },"abc");
 
         System.out.println("------------lambda------------");
-        method( s ->
-                 new Person1(s)
+        method( s ->            // 一个方法参数
+                 new Person1(s)     // 方法体一句话
 
         ,"abc");
 

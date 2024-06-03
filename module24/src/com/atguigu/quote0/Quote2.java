@@ -2,6 +2,12 @@ package com.atguigu.quote0;
 
 import java.util.function.Supplier;
 
+/**
+ * 引用静态方法
+ * 1.引用random在重写方法get里面
+ * 2.重写方法get无形参返回值double
+ * 3.引用方法random无形参返回值double
+ */
 public class Quote2 {
     public static void main(String[] args) {
         //随机数
